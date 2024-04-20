@@ -93,8 +93,8 @@ let generateNewArticle = () => {
     }
     article.innerHTML = `
     <div>
-        <h3>${inputTitle}</h3>
-        <h4>${sectionSelected}</h4>
+        <h3 class="has-text-white">${inputTitle}</h3>
+        <h4 class="has-text-primary" style="font-weight: bold;">${sectionSelected}</h4>
         <p>
             ${inputDetail}
             <br>
@@ -170,6 +170,10 @@ let showFormAddArticle = () => {
     form.appendChild(labelDetail);
     form.appendChild(inputDetail);
     form.appendChild(buttonAdd);
+    buttonAdd.className = 'button';
+    buttonAdd.style.width = '60%';
+    buttonAdd.style.display = 'flex';
+    buttonAdd.style.alignSelf = 'center';
     buttonAdd.onclick = generateNewArticle;
 }
 
