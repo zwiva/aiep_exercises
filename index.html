@@ -21,16 +21,16 @@
             <div style="display: flex; align-items: center;" class="has-text-white">
                 <img src="https://i.pinimg.com/736x/db/c2/24/dbc224e90d7b2db5d4ee6e828434226e.jpg"
                     style="height: 50px; align-self: center; border-radius: 100%; margin: 0.5em;">
-                <h1 class="is-size-5">El Faro</h1>
+                <h1 class="is-size-5 has-text-weight-bold">El Faro</h1>
             </div>
             <div class="banner__menu">
                 <p class="banner__time has-text-white">
                     <span id="date"></span>&nbsp;-&nbsp;<span id="time"></span>&nbsp;
                 </p>
                 <ul style="display: flex; flex-wrap: wrap; justify-content: flex-end;" class="has-text-primary">
-                    <li style="list-style-type: none; font-weight: bold; margin: 0 1em">Inicio</li>
-                    <li style="list-style-type: none; font-weight: bold; margin: 0 1em">Deporte</li>
-                    <li style="list-style-type: none; font-weight: bold; margin: 0 1em">Negocios</li>
+                    <li class="has-text-weight-bold" style="list-style-type: none; margin: 0 1em">Inicio</li>
+                    <li class="has-text-weight-bold" style="list-style-type: none; margin: 0 1em">Deporte</li>
+                    <li class="has-text-weight-bold" style="list-style-type: none; margin: 0 1em">Negocios</li>
                 </ul>
             </div>
         </div>
@@ -38,30 +38,30 @@
 
     <!-- banner publicidad -->
     <section style="display:flex; width: 100%; justify-content:center; min-height: 60px; background-color: #282828;">
-        <div style="display: flex; width: 100%; max-width: 1000px; justify-content: space-between;">
+        <div
+            style="display: flex; width: 100%; max-width: 1000px; justify-content: space-between; border: 1px solid rgb(93, 93, 93);">
             Publicidad
         </div>
     </section>
 
     <!-- icono central -->
-    <header style="display: flex; justify-content: center; align-items: center; padding: 4em 0; width: 100%;"
-        class="box">
+    <header style="display: flex; justify-content: center; align-items: center; padding: 4em 0; width: 100%;">
         <img src="https://i.pinimg.com/736x/db/c2/24/dbc224e90d7b2db5d4ee6e828434226e.jpg"
             style="height: 150px; border-radius: 100%; margin: 0.5em;">
         <div>
-            <h1 class="is-size-1 has-text-white">El Faro</h1>
+            <h1 class="is-size-1 has-text-white has-text-weight-bold">El Faro</h1>
         </div>
     </header>
 
     <!-- menu secciones -->
-    <section style="display:flex; width: 100%; justify-content:center; min-height: 60px;" class="">
-        <div
-            style="display: flex; width: 100%; max-width: 1000px; justify-content: space-around; border-top: 1px solid var(--bulma-primary);">
-            <a class="has-text-primary" href="#gral">Noticias</a>
-            <a class="has-text-primary" href="#sprt">Deportes</a>
-            <a class="has-text-primary" href="#bsn">Negocios</a>
-            <a class="has-text-primary" href="#contact">Contacto</a>
-            <a class="has-text-primary" href="#">Newsletter</a>
+    <section style="display:flex; width: 100%; justify-content:center; min-height: 60px;">
+        <div class="is-flex is-flex-wrap-wrap"
+            style="width: 100%; max-width: 1000px; justify-content: space-around; border-top: 1px solid var(--bulma-primary);">
+            <a class="has-text-primary m-1" href="#gral">Noticias</a>
+            <a class="has-text-primary m-1" href="#sprt">Deportes</a>
+            <a class="has-text-primary m-1" href="#bsn">Negocios</a>
+            <a class="has-text-primary m-1" href="#contact">Contacto</a>
+            <a class="has-text-primary m-1" href="#">Newsletter</a>
         </div>
     </section>
 
@@ -79,12 +79,10 @@
 
         <!-- secciones -->
         <div class="main__sections">
-
             <!-- Seccion generales -->
-            <h2 class="is-size-3 has-text-white" id="gral">Noticias</h2>
+            <h2 class="is-size-3 has-text-white has-text-weight-bold" id="gral">Noticias</h2>
             <h6 style="margin: 0;"><span id="numgeneral"></span> artículos</h6>
-
-            <div class="main__section">
+            <div class="main__section box">
                 <section class="section__body--recent" id="grlsection-recent">
                     <h2 class="has-text-danger" style="margin: 0 1em;">Ahora</h2>
                     <!-- Noticia 3 -->
@@ -122,11 +120,9 @@
                     </article>
                     <!-- Noticia 1 -->
                     <article class="article__body--recent notification is-danger" id="grl1">
-
                         <div>
                             <h3 class="has-text-white">La comuna de los departamentos vacíos</h3>
                             <h4 class="has-text-primary">DOMINGO</h4>
-
                             <p>Cerca de un 40% de los apartamentos en Estación Central están
                                 desocupados, según corredores
                                 de propiedades. ¿Las razones? Ya nadie quiere arrendar en barrios como Toro Mazotte
@@ -143,7 +139,6 @@
                                 </a>
                             </p>
                         </div>
-
                         <div class="article__media">
                             <video class="article__media--video" controls>
                                 <source
@@ -158,9 +153,6 @@
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
-
-
-
                     </article>
                     <!-- Noticia 2 -->
                     <article class="article__body--recent notification is-danger" id="grl2">
@@ -197,7 +189,7 @@
                 </section>
                 <!-- Seccion articulos noticias -->
                 <section class="section__body" id="grlsection">
-                    <h2 style="margin: 0 1em;">+ Visto</h2>
+                    <h2 class="m-2">+ Visto</h2>
                     <!-- Noticia 1 -->
                     <article class="article__body" id="grl1">
                         <div>
@@ -305,10 +297,9 @@
             <hr>
 
             <!-- Seccion deportes -->
-            <h2 class="is-size-3 has-text-white" id="sprt">Deportes</h2>
+            <h2 class="is-size-3 has-text-white has-text-weight-bold" id="sprt">Deportes</h2>
             <h6 style="margin: 0;"><span id="numsports"></span> artículos</h6>
-
-            <div class="main__section">
+            <div class="main__section box">
                 <section class="section__body--recent" id="sprsection">
                     <h2 class="has-text-danger" style="margin: 0 1em;">Ahora</h2>
                     <!-- Noticia 3 -->
@@ -409,7 +400,7 @@
                     </article>
                 </section>
                 <section class="section__body" id="sprsection">
-                    <h2 style="margin: 0 1em;">+ Visto</h2>
+                    <h2 class="m-2">+ Visto</h2>
                     <!-- Noticia 1 -->
                     <article class="article__body" id="spr1">
                         <div>
@@ -512,10 +503,9 @@
             <hr>
 
             <!-- Seccion negocios -->
-            <h2 class="is-size-3 has-text-white" id="bsn">Negocios</h2>
+            <h2 class="is-size-3 has-text-white has-text-weight-bold" id="bsn">Negocios</h2>
             <h6 style="margin: 0;"><span id="numbusiness"></span> artículos</h6>
-
-            <div class="main__section">
+            <div class="main__section box">
                 <section class="section__body--recent" id="bsnsection">
                     <h2 class="has-text-danger" style="margin: 0 1em;">Ahora</h2>
                     <!-- Noticia 1 -->
@@ -615,7 +605,7 @@
                     </article>
                 </section>
                 <section class="section__body" id="bsnsection">
-                    <h2 style="margin: 0 1em;">+ Visto</h2>
+                    <h2 class="m-2">+ Visto</h2>
                     <!-- Noticia 3 -->
                     <article class="article__body" id="bsn3">
                         <div>
@@ -715,13 +705,16 @@
             </div>
         </div>
 
-        <hr style="width:100%; border: 1px solid #c9c9c9;">
 
-        <!-- formulario contacto -->
-        <div class="main__contact m-5" id="contact">
-            
+
+    </main>
+
+    <!-- formulario contacto -->
+    <aside class="" id="contact">
+        <div class="is-flex is-justify-content-center main__contact m-5">
+
             <div class="m-5">
-                <h2 class="is-size-4 has-text-primary">Contáctese con nosotros</h2>
+                <h2 class="is-size-4 has-text-primary has-text-weight-bold">Contáctese con nosotros</h2>
             </div>
 
             <form name="selectForm" style="margin-bottom: 1em;">
@@ -738,7 +731,8 @@
                 </div>
             </form>
         </div>
-    </main>
+
+    </aside>
     <!-- portada -->
     <footer class="has-background-primary">
         <div style="display: flex; width: 100%; max-width: 1000px; justify-content: center; align-content: flex-start;">
@@ -748,8 +742,8 @@
             </div>
 
             <div style="margin: 1em; width: 70%;">
-                <div class="is-flex">
-                    <h4 class="mr-2">Noticias El Faro, 2024.</h4>
+                <div class="is-flex m-3">
+                    <h4>Noticias El Faro, 2024.</h4>
                 </div>
                 <div class="is-flex is-flex-wrap-wrap">
                     <div class="is-flex is-flex-direction-column mx-3">
@@ -771,7 +765,7 @@
                         <a href="">CLUB DE LECTORES</a>
                     </div>
                 </div>
-                <div class="is-flex">
+                <div class="is-flex m-3">
                     <h6>Todos los derechos reservados</h6>
                 </div>
             </div>
