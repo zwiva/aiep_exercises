@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <script src="juego.js" defer></script>
     <title>El faro noticias</title>
 </head>
 
@@ -45,13 +46,21 @@
     </header>
 
     <main>
+        <div class="main__btn-add">
+            <button onclick="showFormAddArticle()">+ Agregar noticia</button> 
+            <span id="numall" style="margin: 0 0.5em;"></span> artículos en total.
+        </div>
+
+        <div class="main__add-article" id="creator" style="margin:1em"></div>
+
         <div class="main__sections">
             <!-- Seccion articulos noticias -->
             <h2>Noticias generales</h2>
-            <section class="section__body">
+            <h6 style="margin: 0;"><span id="numgeneral"></span> artículos</h6>
+            <section class="section__body" id="grlsection">
 
                 <!-- Noticia 1 -->
-                <article class="article__body">
+                <article class="article__body" id="grl1">
                     <div>
                         <h3>La comuna de los departamentos vacíos</h3>
                         <h4>DOMINGO</h4>
@@ -82,11 +91,10 @@
                             Your browser does not support the audio element.
                         </audio>
                     </div>
-
                 </article>
 
                 <!-- Noticia 2 -->
-                <article class="article__body">
+                <article class="article__body" id="grl2">
                     <div>
                         <h3>Cuántos minutos de ejercicio necesitas a diario para evitar el
                             sedentarismo y reducir el
@@ -118,7 +126,7 @@
                 </article>
 
                 <!-- Noticia 3 -->
-                <article class="article__body">
+                <article class="article__body" id="grl3">
                     <div>
                         <h3>Cómo doblar las sábanas de forma fácil, rápida y perfecta</h3>
                         <h4>PRACTICO</h4>
@@ -152,10 +160,11 @@
             <hr>
             <!-- Seccion deportes -->
             <h2>Deportes</h2>
-            <section class="section__body">
+            <h6 style="margin: 0;"><span id="numsports"></span> artículos</h6>
+            <section class="section__body" id="sprsection">
 
                 <!-- Noticia 1 -->
-                <article class="article__body">
+                <article class="article__body" id="spr1">
                     <div>
                         <h3>La histórica rivalidad del fútbol argentino que derribó Javier Altamirano</h3>
                         <h4>Deportes</h4>
@@ -185,7 +194,7 @@
                 </article>
 
                 <!-- Noticia 2 -->
-                <article class="article__body">
+                <article class="article__body" id="spr2">
                     <div>
                         <h3>La pizarra de Tiago Nunes, el nuevo técnico de la UC</h3>
                         <h4>Deportes</h4>
@@ -216,7 +225,7 @@
                 </article>
 
                 <!-- Noticia 3 -->
-                <article class="article__body">
+                <article class="article__body" id="spr3">
                     <div>
                         <h3>Revelan el fuerte enfrentamiento de Novak Djokovic que terminó con la
                             salida del coach Goran Ivanisevic</h3>
@@ -252,10 +261,11 @@
             <hr>
             <!-- Seccion negocios -->
             <h2>Negocios</h2>
-            <section class="section__body">
+            <h6 style="margin: 0;"><span id="numbusiness"></span> artículos</h6>
+            <section class="section__body" id="bsnsection">
 
                 <!-- Noticia 1 -->
-                <article class="article__body">
+                <article class="article__body" id="bsn1">
                     <div>
                         <h3>Programas de emprendimiento Fosis: requisitos y cómo postular</h3>
                         <h4>Negocios</h4>
@@ -286,7 +296,7 @@
                 </article>
 
                 <!-- Noticia 2 -->
-                <article class="article__body">
+                <article class="article__body" id="bsn2">
                     <div>
                         <h3>Operación Renta 2024: ¿Cuándo es y quiénes deben realizarla?</h3>
                         <h4>Negocios</h4>
@@ -316,7 +326,7 @@
                 </article>
 
                 <!-- Noticia 3 -->
-                <article class="article__body">
+                <article class="article__body" id="bsn3">
                     <div>
                         <h3>Disaster Recovery: Una necesidad imperante para las organizaciones</h3>
                         <h4>Negocios</h4>
@@ -351,6 +361,8 @@
         </div>
 
         <hr style="width:100%; border: 1px solid #c9c9c9;">
+
+        <!-- formulario contacto -->
         <div class="main__contact">
             <div style="margin: 0 1em;">
 

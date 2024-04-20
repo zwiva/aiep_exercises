@@ -117,3 +117,13 @@ a:hover {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.main__btn-add {
+    display: flex;
+    justify-content: center;
+}
+
+.main__add-article {
+    display: flex;
+    justify-content: center;
+}
