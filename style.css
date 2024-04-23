@@ -34,7 +34,7 @@ main {
 }
 
 .main__section--spotlight {
-    width: 90%;
+    width: 100%;
     font-size: 0.8em;
     display: flex;
     gap: 1.5em;
