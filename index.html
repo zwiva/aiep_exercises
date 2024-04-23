@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>El faro noticias</title>
 </head>
 
@@ -21,7 +22,7 @@
             <div style="display: flex; align-items: center;" class="has-text-white">
                 <img src="https://i.pinimg.com/736x/db/c2/24/dbc224e90d7b2db5d4ee6e828434226e.jpg"
                     style="height: 50px; align-self: center; border-radius: 100%; margin: 0.5em;">
-                <h1 class="is-size-5 has-text-weight-bold">El Faro</h1>
+                <h1 class="is-size-5 has-text-weight-bold">El Far<span class="has-text-danger">o</span></h1>
             </div>
             <div class="banner__menu">
                 <p class="banner__time has-text-white">
@@ -37,9 +38,9 @@
     </nav>
 
     <!-- banner publicidad -->
-    <section style="display:flex; width: 100%; justify-content:center; min-height: 60px; background-color: #282828;">
-        <div
-            style="display: flex; width: 100%; max-width: 1000px; justify-content: space-between; border: 1px solid rgb(93, 93, 93);">
+    <section class="is-flex is-justify-content-center" style="width: 100%; min-height: 60px; background-color: #282828;">
+        <div class="is-flex is-justify-content-space-between"
+            style="width: 100%; max-width: 1000px; border: 1px solid rgb(93, 93, 93);">
             Publicidad
         </div>
     </section>
@@ -49,7 +50,7 @@
         <img src="https://i.pinimg.com/736x/db/c2/24/dbc224e90d7b2db5d4ee6e828434226e.jpg"
             style="height: 150px; border-radius: 100%; margin: 0.5em;">
         <div>
-            <h1 class="is-size-1 has-text-white has-text-weight-bold">El Faro</h1>
+            <h1 class="is-size-1 has-text-white has-text-weight-bold">El Far<span class="has-text-danger">o</span></h1>
         </div>
     </header>
 
@@ -79,117 +80,112 @@
 
         <!-- secciones -->
         <div class="main__sections">
+            <!-- Recientes  -->
+            <h2 class="is-size-4 has-text-white has-text-weight-bold has-text-danger ml-4"
+                style="align-self: flex-start;" id="spot">
+                + Recientes
+            </h2>
+            <div class="main__section--spotlight box is-danger">
+                <article class="spotlight__element">
+                    <div class="spotlight__element--type">
+                        <h5 class="m-1 spotlight__element--hour has-text-white">21:40</h5>
+                        <h3 class="m-1 has-text-danger">Negocios</h3>
+                    </div>
+                    <div>
+                        <p class="m-1 spotlight__element--title has-text-weight-bold">
+                            Pakomio advierte que CNC evalúa acciones legales por dictamen de la Dirección del
+                            Trabajo
+                        </p>
+                        <a class="m-1"
+                            href="https://www.elmostrador.cl/noticias/pais/2024/04/22/pakomio-advierte-que-cnc-evalua-acciones-legales-para-frenar-ley-de-40-horas/">
+                            Ir a noticia
+                        </a>
+                    </div>
+                </article>
+                <article class="spotlight__element ">
+                    <div class="spotlight__element--type">
+                        <h5 class="m-1 spotlight__element--hour has-text-white">19:15</h5>
+                        <h3 class="m-1 has-text-danger">Noticias</h3>
+                    </div>
+                    <div>
+                        <p class="m-1 spotlight__element--title has-text-weight-bold">
+                            Edificio en Santa Isabel sufre fuego estructural en departamento
+                        </p>
+                        <a class="m-1"
+                            href="https://www.elmostrador.cl/noticias/pais/2024/04/22/pakomio-advierte-que-cnc-evalua-acciones-legales-para-frenar-ley-de-40-horas/">
+                            Ir a noticia
+                        </a>
+                    </div>
+                </article>
+                <article class="spotlight__element ">
+                    <div class="spotlight__element--type">
+                        <h5 class="m-1 spotlight__element--hour has-text-white">18:05</h5>
+                        <h3 class="m-1 has-text-danger">Noticias</h3>
+                    </div>
+                    <div>
+                        <p class="m-1 spotlight__element--title has-text-weight-bold">
+                            SII identifica a más de 600 chilenos con cuentas en el extranjero: tienen US$23 mil
+                            millones
+                        </p>
+                        <a class="m-1"
+                            href="https://www.elmostrador.cl/mercados/2024/04/22/sii-identifica-a-mas-de-600-chilenos-con-cuentas-en-el-extranjero-tienen-us23-mil-millones/">
+                            Ir a noticia
+                        </a>
+                    </div>
+                </article>
+                <article class="spotlight__element ">
+                    <div class="spotlight__element--type">
+                        <h5 class="m-1 spotlight__element--hour has-text-white">17:45</h5>
+                        <h3 class="m-1 has-text-danger">Negocios</h3>
+                    </div>
+                    <div>
+                        <p class="m-1 spotlight__element--title has-text-weight-bold">
+                            Ley de 40 horas: esta semana comienza a regir la nueva jornada laboral de 44 horas
+                        </p>
+                        <a class="m-1"
+                            href="https://www.elmostrador.cl/datos-utiles/2024/04/22/ley-de-40-horas-esta-semana-comienza-a-regir-la-nueva-jornada-laboral-de-44-horas/">
+                            Ir a noticia
+                        </a>
+                    </div>
+                </article>
+                <article class="spotlight__element ">
+                    <div class="spotlight__element--type">
+                        <h5 class="m-1 spotlight__element--hour has-text-white">16:35</h5>
+                        <h3 class="m-1 has-text-danger">Negocios</h3>
+                    </div>
+                    <div>
+                        <p class="m-1 spotlight__element--title has-text-weight-bold">
+                            Radiografía a una élite empresarial en tensión con La Moneda en la víspera de la Enade 2024
+                        </p>
+                        <a class="m-1"
+                            href="https://www.elmostrador.cl/el-semanal/2024/04/22/radiografia-a-una-elite-empresarial-en-tension-con-la-moneda-en-la-vispera-de-la-enade-2024/">
+                            Ir a noticia
+                        </a>
+                    </div>
+                </article>
+                <article class="spotlight__element ">
+                    <div class="spotlight__element--type">
+                        <h5 class="m-1 spotlight__element--hour has-text-white">15:01</h5>
+                        <h3 class="m-1 has-text-danger">Noticias</h3>
+                    </div>
+                    <div>
+                        <p class="m-1 spotlight__element--title has-text-weight-bold">
+                            Descubren una bacteria mutante a bordo de la Estación Espacial Internacional
+                        </p>
+                        <a class="m-1"
+                            href="https://www.elmostrador.cl/tendencias/2024/04/22/descubren-una-bacteria-mutante-a-bordo-de-la-estacion-espacial-internacional/">
+                            Ir a noticia
+                        </a>
+                    </div>
+                </article>
+            </div>
+
             <!-- Seccion generales -->
             <h2 class="is-size-3 has-text-white has-text-weight-bold" id="gral">Noticias</h2>
             <h6 style="margin: 0;"><span id="numgeneral"></span> artículos</h6>
             <div class="main__section box">
-                <section class="section__body--recent" id="grlsection-recent">
-                    <h2 class="has-text-danger" style="margin: 0 1em;">Ahora</h2>
-                    <!-- Noticia 3 -->
-                    <article class="article__body--recent notification is-danger" id="grl3">
-                        <div>
-                            <h3 class="has-text-white">Cómo doblar las sábanas de forma fácil, rápida y perfecta
-                            </h3>
-                            <h4 class="has-text-primary">PRACTICO</h4>
-                            <p>
-                                Lo que para mucha gente resulta un infierno —especialmente la sábana bajera—, en
-                                realidad es
-                                un arte sencillo de dominar. Y hacerlo correctamente puede cambiarte la vida. Aquí
-                                lo
-                                explicamos paso a paso. <br>
-                                <a target="_blank"
-                                    href="https://www.latercera.com/practico/noticia/como-doblar-las-sabanas-de-forma-facil-rapida-y-perfecta/35VOL36IURHRXEZ5LMI35VMDC4/">Ir
-                                    a la noticia
-                                </a>
-                            </p>
-                        </div>
-                        <div class="article__media">
-                            <video class="article__media--video" controls>
-                                <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1066143196/preview/stock-footage-happy-hispanic-teen-girl-holding-cell-phone-using-smartphone-device-at-home-smiling-young-latin.webm"
-                                    type="video/webm">
-                                <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1066143196/preview/stock-footage-happy-hispanic-teen-girl-holding-cell-phone-using-smartphone-device-at-home-smiling-young-latin.mp4"
-                                    type="video/mp4">
-                            </video>
-                            <audio class="article__media--audio" controls>
-                                <source src="assets/audio/electricidad.mp3" type="audio/mp3">
-                                Your browser does not support the audio element.
-                            </audio>
-                        </div>
-                    </article>
-                    <!-- Noticia 1 -->
-                    <article class="article__body--recent notification is-danger" id="grl1">
-                        <div>
-                            <h3 class="has-text-white">La comuna de los departamentos vacíos</h3>
-                            <h4 class="has-text-primary">DOMINGO</h4>
-                            <p>Cerca de un 40% de los apartamentos en Estación Central están
-                                desocupados, según corredores
-                                de propiedades. ¿Las razones? Ya nadie quiere arrendar en barrios como Toro Mazotte
-                                y
-                                Conde
-                                del Maule, por la inseguridad que hay en las calles. Una situación que presiona a
-                                quienes
-                                compraron como inversión y que, ni siquiera ofreciendo rebajas en torno al 20%, los
-                                corredores están pudiendo revertir.
-                                <br>
-                                <a target="_blank"
-                                    href="https://www.latercera.com/la-tercera-domingo/noticia/la-comuna-de-los-departamentos-vacios/Q5BSXML2D5DBVEIL4XHTBXVC6Q/">Ir
-                                    a la noticia
-                                </a>
-                            </p>
-                        </div>
-                        <div class="article__media">
-                            <video class="article__media--video" controls>
-                                <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1081189640/preview/stock-footage-digital-city-concept-artificial-intelligence-technology-in-smart-city.webm"
-                                    type="video/webm">
-                                <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1081189640/preview/stock-footage-digital-city-concept-artificial-intelligence-technology-in-smart-city.mp4"
-                                    type="video/mp4">
-                            </video>
-                            <audio class="article__media--audio" controls>
-                                <source src="assets/audio/violinista.mp3" type="audio/mp3">
-                                Your browser does not support the audio element.
-                            </audio>
-                        </div>
-                    </article>
-                    <!-- Noticia 2 -->
-                    <article class="article__body--recent notification is-danger" id="grl2">
-                        <div>
-                            <h3 class="has-text-white">Cuántos minutos de ejercicio necesitas a diario para evitar
-                                el
-                                sedentarismo y reducir el
-                                riesgo de mortalidad</h3>
-                            <h4 class="has-text-primary">TENDENCIAS</h4>
-                            <p>Una investigación reciente concluyó que con este tiempo de actividad
-                                física ya tienes
-                                beneficios considerables para tu salud. Estos son los detalles. <br>
-                                <a target="_blank"
-                                    href="https://www.latercera.com/tendencias/noticia/cuantos-minutos-de-ejercicio-necesitas-a-diario-para-evitar-el-sedentarismo-y-reducir-el-riesgo-de-mortalidad/6Z3GULE4LRFNDNKTGQPUAWVT6U/">Ir
-                                    a la noticia
-                                </a>
-                            </p>
-                        </div>
-                        <div class="article__media">
-                            <video class="article__media--video" controls>
-                                <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1080319025/preview/stock-footage-abstract-tech-earth-globalization-in-d-motion-graphic-concept-transmit-ai-networking-on-fiber.webm"
-                                    type="video/webm">
-                                <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1080319025/preview/stock-footage-abstract-tech-earth-globalization-in-d-motion-graphic-concept-transmit-ai-networking-on-fiber.mp4"
-                                    type="video/mp4">
-                            </video>
-                            <audio class="article__media--audio" controls>
-                                <source src="assets/audio/bullicio.mp3" type="audio/mp3">
-                                Your browser does not support the audio element.
-                            </audio>
-                        </div>
-                    </article>
-                </section>
-                <!-- Seccion articulos noticias -->
                 <section class="section__body" id="grlsection">
-                    <h2 class="m-2">+ Visto</h2>
+                    <h2 class="m-2 is-size-5">+ Visto</h2>
                     <!-- Noticia 1 -->
                     <article class="article__body" id="grl1">
                         <div>
@@ -292,31 +288,22 @@
                         </div>
                     </article>
                 </section>
-            </div>
-
-            <hr>
-
-            <!-- Seccion deportes -->
-            <h2 class="is-size-3 has-text-white has-text-weight-bold" id="sprt">Deportes</h2>
-            <h6 style="margin: 0;"><span id="numsports"></span> artículos</h6>
-            <div class="main__section box">
-                <section class="section__body--recent" id="sprsection">
-                    <h2 class="has-text-danger" style="margin: 0 1em;">Ahora</h2>
+                <section class="section__body--interest" id="grlsection-interest">
+                    <h2 class="has-text-primary" style="margin: 0 1em; font-size: 0.8em;">Puede interesarle:</h2>
                     <!-- Noticia 3 -->
-                    <article class="article__body--recent notification is-danger" id="spr3">
+                    <article class="article__body--interest notification is-primary-dark" id="grl3">
                         <div>
-                            <h3 class="has-text-white">Revelan el fuerte enfrentamiento de Novak Djokovic que terminó
-                                con la
-                                salida del coach Goran Ivanisevic</h3>
-                            <h4 class="has-text-primary">DEPORTES</h4>
+                            <h3 class="has-text-white">Cómo doblar las sábanas de forma fácil, rápida y perfecta
+                            </h3>
+                            <h4 class="has-text-primary">PRACTICO</h4>
                             <p>
-                                Según el sitio Sporskeeda, el número del tenis tuvo una fuerte discusión con el
-                                entrenador
-                                croata, después de que el serbio tuvo un pésimo entrenamiento en la disputa de Indian
-                                Wells.
-                                Fue solo el desenlace de los cambios está haciendo en su staff.<br>
+                                Lo que para mucha gente resulta un infierno —especialmente la sábana bajera—, en
+                                realidad es
+                                un arte sencillo de dominar. Y hacerlo correctamente puede cambiarte la vida. Aquí
+                                lo
+                                explicamos paso a paso. <br>
                                 <a target="_blank"
-                                    href="https://www.latercera.com/el-deportivo/noticia/revelan-el-fuerte-enfrentamiento-de-novak-djokovic-que-termino-con-la-salida-del-coach-goran-ivanisevic/54KTCLCCTBALXGS52GHRVRCLVM/">Ir
+                                    href="https://www.latercera.com/practico/noticia/como-doblar-las-sabanas-de-forma-facil-rapida-y-perfecta/35VOL36IURHRXEZ5LMI35VMDC4/">Ir
                                     a la noticia
                                 </a>
                             </p>
@@ -324,31 +311,35 @@
                         <div class="article__media">
                             <video class="article__media--video" controls>
                                 <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1080013502/preview/stock-footage-beautiful-football-goal-at-world-cup-match-qatar-colors-ball-flies-into-net-on-playground-in-slow.webm"
+                                    src="https://www.shutterstock.com/shutterstock/videos/1066143196/preview/stock-footage-happy-hispanic-teen-girl-holding-cell-phone-using-smartphone-device-at-home-smiling-young-latin.webm"
                                     type="video/webm">
                                 <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1080013502/preview/stock-footage-beautiful-football-goal-at-world-cup-match-qatar-colors-ball-flies-into-net-on-playground-in-slow.mp4"
+                                    src="https://www.shutterstock.com/shutterstock/videos/1066143196/preview/stock-footage-happy-hispanic-teen-girl-holding-cell-phone-using-smartphone-device-at-home-smiling-young-latin.mp4"
                                     type="video/mp4">
                             </video>
-
                             <audio class="article__media--audio" controls>
-                                <source src="assets/audio/gruaMunicipal.mp3" type="audio/mp3">
+                                <source src="assets/audio/electricidad.mp3" type="audio/mp3">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                     </article>
-                    <!-- Noticia 2 -->
-                    <article class="article__body--recent notification is-danger" id="spr2">
+                    <!-- Noticia 1 -->
+                    <article class="article__body--interest notification is-primary-dark" id="grl1">
                         <div>
-                            <h3 class="has-text-white">La pizarra de Tiago Nunes, el nuevo técnico de la UC</h3>
-                            <h4 class="has-text-primary">DEPORTES</h4>
-                            <p>El brasileño debuta este sábado al mediodía, en casa de Huachipato. Un
-                                DT que gusta de someter a sus rivales y presionar alto en la cancha. “Su planteamiento
-                                descuida mucho el fondo, deja espacios atrás”, advierte Érick Delgado, histórico de
-                                Sporting
-                                Cristal, el último club que comandó, en Perú.<br>
+                            <h3 class="has-text-white">La comuna de los departamentos vacíos</h3>
+                            <h4 class="has-text-primary">DOMINGO</h4>
+                            <p>Cerca de un 40% de los apartamentos en Estación Central están
+                                desocupados, según corredores
+                                de propiedades. ¿Las razones? Ya nadie quiere arrendar en barrios como Toro Mazotte
+                                y
+                                Conde
+                                del Maule, por la inseguridad que hay en las calles. Una situación que presiona a
+                                quienes
+                                compraron como inversión y que, ni siquiera ofreciendo rebajas en torno al 20%, los
+                                corredores están pudiendo revertir.
+                                <br>
                                 <a target="_blank"
-                                    href="https://www.latercera.com/el-deportivo/noticia/la-pizarra-de-tiago-nunes-el-nuevo-tecnico-de-la-uc/KVXHYCPUQRB7BO6BCEMM2QUNSE/">Ir
+                                    href="https://www.latercera.com/la-tercera-domingo/noticia/la-comuna-de-los-departamentos-vacios/Q5BSXML2D5DBVEIL4XHTBXVC6Q/">Ir
                                     a la noticia
                                 </a>
                             </p>
@@ -356,10 +347,10 @@
                         <div class="article__media">
                             <video class="article__media--video" controls>
                                 <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1096673017/preview/stock-footage-soccer-player-goal-hand-drawn-sketch-animation-video-football-goal-soccer-playground-background.webm"
+                                    src="https://www.shutterstock.com/shutterstock/videos/1081189640/preview/stock-footage-digital-city-concept-artificial-intelligence-technology-in-smart-city.webm"
                                     type="video/webm">
                                 <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1096673017/preview/stock-footage-soccer-player-goal-hand-drawn-sketch-animation-video-football-goal-soccer-playground-background.mp4"
+                                    src="https://www.shutterstock.com/shutterstock/videos/1081189640/preview/stock-footage-digital-city-concept-artificial-intelligence-technology-in-smart-city.mp4"
                                     type="video/mp4">
                             </video>
                             <audio class="article__media--audio" controls>
@@ -368,17 +359,19 @@
                             </audio>
                         </div>
                     </article>
-                    <!-- Noticia 1 -->
-                    <article class="article__body--recent notification is-danger" id="spr1">
+                    <!-- Noticia 2 -->
+                    <article class="article__body--interest notification is-primary-dark" id="grl2">
                         <div>
-                            <h3 class="has-text-white">La histórica rivalidad del fútbol argentino que derribó Javier
-                                Altamirano</h3>
-                            <h4 class="has-text-primary">DEPORTES</h4>
-                            <p>La convulsión que sufrió el volante chileno en el partido entre
-                                Estudiantes de La Plata y Boca Juniors sigue provocando gestos de apoyo.
-                                <br>
+                            <h3 class="has-text-white">Cuántos minutos de ejercicio necesitas a diario para evitar
+                                el
+                                sedentarismo y reducir el
+                                riesgo de mortalidad</h3>
+                            <h4 class="has-text-primary">TENDENCIAS</h4>
+                            <p>Una investigación reciente concluyó que con este tiempo de actividad
+                                física ya tienes
+                                beneficios considerables para tu salud. Estos son los detalles. <br>
                                 <a target="_blank"
-                                    href="https://www.latercera.com/el-deportivo/noticia/la-historica-rivalidad-del-futbol-argentino-que-derribo-javier-altamirano/C2LEEAJP65DJ3NL26CK6BU2QQU/">Ir
+                                    href="https://www.latercera.com/tendencias/noticia/cuantos-minutos-de-ejercicio-necesitas-a-diario-para-evitar-el-sedentarismo-y-reducir-el-riesgo-de-mortalidad/6Z3GULE4LRFNDNKTGQPUAWVT6U/">Ir
                                     a la noticia
                                 </a>
                             </p>
@@ -386,21 +379,29 @@
                         <div class="article__media">
                             <video class="article__media--video" controls>
                                 <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1107881453/preview/stock-footage-fiery-soccer-ball-kicked-with-power-at-the-stadium-scoring-a-goal-fiery-soccer-ball-in-goal-with.webm"
+                                    src="https://www.shutterstock.com/shutterstock/videos/1080319025/preview/stock-footage-abstract-tech-earth-globalization-in-d-motion-graphic-concept-transmit-ai-networking-on-fiber.webm"
                                     type="video/webm">
                                 <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1107881453/preview/stock-footage-fiery-soccer-ball-kicked-with-power-at-the-stadium-scoring-a-goal-fiery-soccer-ball-in-goal-with.mp4"
+                                    src="https://www.shutterstock.com/shutterstock/videos/1080319025/preview/stock-footage-abstract-tech-earth-globalization-in-d-motion-graphic-concept-transmit-ai-networking-on-fiber.mp4"
                                     type="video/mp4">
                             </video>
                             <audio class="article__media--audio" controls>
-                                <source src="assets/audio/flyby.mp3" type="audio/mp3">
+                                <source src="assets/audio/bullicio.mp3" type="audio/mp3">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                     </article>
                 </section>
+            </div>
+
+            <hr>
+
+            <!-- Seccion deportes -->
+            <h2 class="is-size-3 has-text-white has-text-weight-bold" id="sprt">Deportes</h2>
+            <h6 style="margin: 0;"><span id="numsports"></span> artículos</h6>
+            <div class="main__section box">
                 <section class="section__body" id="sprsection">
-                    <h2 class="m-2">+ Visto</h2>
+                    <h2 class="m-2 is-size-5">+ Visto</h2>
                     <!-- Noticia 1 -->
                     <article class="article__body" id="spr1">
                         <div>
@@ -498,29 +499,23 @@
                         </div>
                     </article>
                 </section>
-            </div>
-
-            <hr>
-
-            <!-- Seccion negocios -->
-            <h2 class="is-size-3 has-text-white has-text-weight-bold" id="bsn">Negocios</h2>
-            <h6 style="margin: 0;"><span id="numbusiness"></span> artículos</h6>
-            <div class="main__section box">
-                <section class="section__body--recent" id="bsnsection">
-                    <h2 class="has-text-danger" style="margin: 0 1em;">Ahora</h2>
-                    <!-- Noticia 1 -->
-                    <article class="article__body--recent notification is-danger" id="bsn1">
+                <section class="section__body--interest" id="sprsection">
+                    <h2 class="has-text-primary" style="margin: 0 1em; font-size: 0.8em;">Puede interesarle:</h2>
+                    <!-- Noticia 3 -->
+                    <article class="article__body--interest notification is-primary-dark" id="spr3">
                         <div>
-                            <h3 class="has-text-white">Programas de emprendimiento Fosis: requisitos y cómo postular
-                            </h3>
-                            <h4 class="has-text-primary">NEGOCIOS</h4>
-                            <p>Los beneficios que pueden solicitar las personas dependerán de la región
-                                y comuna en la que residan, ya que la inscripción estará disponible para los proyectos
-                                que
-                                se desarrollen en su zona.
-                                <br>
+                            <h3 class="has-text-white">Revelan el fuerte enfrentamiento de Novak Djokovic que terminó
+                                con la
+                                salida del coach Goran Ivanisevic</h3>
+                            <h4 class="has-text-primary">DEPORTES</h4>
+                            <p>
+                                Según el sitio Sporskeeda, el número del tenis tuvo una fuerte discusión con el
+                                entrenador
+                                croata, después de que el serbio tuvo un pésimo entrenamiento en la disputa de Indian
+                                Wells.
+                                Fue solo el desenlace de los cambios está haciendo en su staff.<br>
                                 <a target="_blank"
-                                    href="https://www.latercera.com/servicios/noticia/programas-de-emprendimiento-fosis-requisitos-y-como-postular/B66C2WILBVDTBGYWS4DOY2SMD4/">Ir
+                                    href="https://www.latercera.com/el-deportivo/noticia/revelan-el-fuerte-enfrentamiento-de-novak-djokovic-que-termino-con-la-salida-del-coach-goran-ivanisevic/54KTCLCCTBALXGS52GHRVRCLVM/">Ir
                                     a la noticia
                                 </a>
                             </p>
@@ -528,10 +523,42 @@
                         <div class="article__media">
                             <video class="article__media--video" controls>
                                 <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1060058060/preview/stock-footage-asia-businessmen-and-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-colleagues.webm"
+                                    src="https://www.shutterstock.com/shutterstock/videos/1080013502/preview/stock-footage-beautiful-football-goal-at-world-cup-match-qatar-colors-ball-flies-into-net-on-playground-in-slow.webm"
                                     type="video/webm">
                                 <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1060058060/preview/stock-footage-asia-businessmen-and-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-colleagues.mp4"
+                                    src="https://www.shutterstock.com/shutterstock/videos/1080013502/preview/stock-footage-beautiful-football-goal-at-world-cup-match-qatar-colors-ball-flies-into-net-on-playground-in-slow.mp4"
+                                    type="video/mp4">
+                            </video>
+
+                            <audio class="article__media--audio" controls>
+                                <source src="assets/audio/gruaMunicipal.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </article>
+                    <!-- Noticia 2 -->
+                    <article class="article__body--interest notification is-primary-dark" id="spr2">
+                        <div>
+                            <h3 class="has-text-white">La pizarra de Tiago Nunes, el nuevo técnico de la UC</h3>
+                            <h4 class="has-text-primary">DEPORTES</h4>
+                            <p>El brasileño debuta este sábado al mediodía, en casa de Huachipato. Un
+                                DT que gusta de someter a sus rivales y presionar alto en la cancha. “Su planteamiento
+                                descuida mucho el fondo, deja espacios atrás”, advierte Érick Delgado, histórico de
+                                Sporting
+                                Cristal, el último club que comandó, en Perú.<br>
+                                <a target="_blank"
+                                    href="https://www.latercera.com/el-deportivo/noticia/la-pizarra-de-tiago-nunes-el-nuevo-tecnico-de-la-uc/KVXHYCPUQRB7BO6BCEMM2QUNSE/">Ir
+                                    a la noticia
+                                </a>
+                            </p>
+                        </div>
+                        <div class="article__media">
+                            <video class="article__media--video" controls>
+                                <source
+                                    src="https://www.shutterstock.com/shutterstock/videos/1096673017/preview/stock-footage-soccer-player-goal-hand-drawn-sketch-animation-video-football-goal-soccer-playground-background.webm"
+                                    type="video/webm">
+                                <source
+                                    src="https://www.shutterstock.com/shutterstock/videos/1096673017/preview/stock-footage-soccer-player-goal-hand-drawn-sketch-animation-video-football-goal-soccer-playground-background.mp4"
                                     type="video/mp4">
                             </video>
                             <audio class="article__media--audio" controls>
@@ -540,16 +567,17 @@
                             </audio>
                         </div>
                     </article>
-                    <!-- Noticia 2 -->
-                    <article class="article__body--recent notification is-danger" id="bsn2">
+                    <!-- Noticia 1 -->
+                    <article class="article__body--interest notification is-primary-dark" id="spr1">
                         <div>
-                            <h3 class="has-text-white">Operación Renta 2024: ¿Cuándo es y quiénes deben realizarla?</h3>
-                            <h4 class="has-text-primary">NEGOCIOS</h4>
-                            <p>El proceso, que se lleva a cabo anualmente, no es necesario que sea
-                                tramitado por todas las personas, sino que solo por quienes el Servicio de Impuestos
-                                Internos indique.<br>
+                            <h3 class="has-text-white">La histórica rivalidad del fútbol argentino que derribó Javier
+                                Altamirano</h3>
+                            <h4 class="has-text-primary">DEPORTES</h4>
+                            <p>La convulsión que sufrió el volante chileno en el partido entre
+                                Estudiantes de La Plata y Boca Juniors sigue provocando gestos de apoyo.
+                                <br>
                                 <a target="_blank"
-                                    href="https://www.latercera.com/servicios/noticia/operacion-renta-2024-cuando-es-y-quienes-deben-realizarla/J44WMWCHJVD4DHO5ACLF5YPL4E/">Ir
+                                    href="https://www.latercera.com/el-deportivo/noticia/la-historica-rivalidad-del-futbol-argentino-que-derribo-javier-altamirano/C2LEEAJP65DJ3NL26CK6BU2QQU/">Ir
                                     a la noticia
                                 </a>
                             </p>
@@ -557,55 +585,29 @@
                         <div class="article__media">
                             <video class="article__media--video" controls>
                                 <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1103926799/preview/stock-footage-save-the-planet-earth-global-carbon-offsets-price-report-kpi-co-emission-ai-big-data-global.webm"
+                                    src="https://www.shutterstock.com/shutterstock/videos/1107881453/preview/stock-footage-fiery-soccer-ball-kicked-with-power-at-the-stadium-scoring-a-goal-fiery-soccer-ball-in-goal-with.webm"
                                     type="video/webm">
                                 <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1103926799/preview/stock-footage-save-the-planet-earth-global-carbon-offsets-price-report-kpi-co-emission-ai-big-data-global.mp4"
+                                    src="https://www.shutterstock.com/shutterstock/videos/1107881453/preview/stock-footage-fiery-soccer-ball-kicked-with-power-at-the-stadium-scoring-a-goal-fiery-soccer-ball-in-goal-with.mp4"
                                     type="video/mp4">
                             </video>
                             <audio class="article__media--audio" controls>
-                                <source src="assets/audio/gruaMunicipal.mp3" type="audio/mp3">
-                                Your browser does not support the audio element.
-                            </audio>
-                        </div>
-                    </article>
-                    <!-- Noticia 3 -->
-                    <article class="article__body--recent notification is-danger" id="bsn3">
-                        <div>
-                            <h3 class="has-text-white">Disaster Recovery: Una necesidad imperante para las
-                                organizaciones
-                            </h3>
-                            <h4 class="has-text-primary">NEGOCIOS</h4>
-                            <p>
-                                La creciente amenaza de los ciberataques hace cada vez más evidente la importancia de
-                                que
-                                las compañías desarrollen planes para sobreponerse a distintas contingencias. Seguir las
-                                normas internacionales y capacitar al personal son parte de las claves para llevarlo a
-                                cabo.<br>
-                                <a target="_blank"
-                                    href="https://www.latercera.com/piensa-digital/noticia/disaster-recovery-una-necesidad-imperante-para-las-organizaciones/UAH7O6WRRJHWHF57VXV5BSGUJA/?utm_source=imperdibles&utm_medium=latercera&utm_campaign=editorial">Ir
-                                    a la noticia
-                                </a>
-                            </p>
-                        </div>
-                        <div class="article__media">
-                            <video class="article__media--video" controls>
-                                <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1076498990/preview/stock-footage-top-down-footage-of-a-busy-corporate-office-with-tow-rows-off-businessmen-and-businesswomen-working.webm"
-                                    type="video/webm">
-                                <source
-                                    src="https://www.shutterstock.com/shutterstock/videos/1076498990/preview/stock-footage-top-down-footage-of-a-busy-corporate-office-with-tow-rows-off-businessmen-and-businesswomen-working.mp4"
-                                    type="video/mp4">
-                            </video>
-                            <audio class="article__media--audio" controls>
-                                <source src="assets/audio/bullicio.mp3" type="audio/mp3">
+                                <source src="assets/audio/flyby.mp3" type="audio/mp3">
                                 Your browser does not support the audio element.
                             </audio>
                         </div>
                     </article>
                 </section>
+            </div>
+
+            <hr>
+
+            <!-- Seccion negocios -->
+            <h2 class="is-size-3 has-text-white has-text-weight-bold" id="bsn">Negocios</h2>
+            <h6 style="margin: 0;"><span id="numbusiness"></span> artículos</h6>
+            <div class="main__section box">
                 <section class="section__body" id="bsnsection">
-                    <h2 class="m-2">+ Visto</h2>
+                    <h2 class="m-2 is-size-5">+ Visto</h2>
                     <!-- Noticia 3 -->
                     <article class="article__body" id="bsn3">
                         <div>
@@ -702,10 +704,106 @@
                         </div>
                     </article>
                 </section>
+                <section class="section__body--interest" id="bsnsection">
+                    <h2 class="has-text-primary" style="margin: 0 1em; font-size: 0.8em;">Puede interesarle:</h2>
+                    <!-- Noticia 1 -->
+                    <article class="article__body--interest notification is-primary-dark" id="bsn1">
+                        <div>
+                            <h3 class="has-text-white">Programas de emprendimiento Fosis: requisitos y cómo postular
+                            </h3>
+                            <h4 class="has-text-primary">NEGOCIOS</h4>
+                            <p>Los beneficios que pueden solicitar las personas dependerán de la región
+                                y comuna en la que residan, ya que la inscripción estará disponible para los proyectos
+                                que
+                                se desarrollen en su zona.
+                                <br>
+                                <a target="_blank"
+                                    href="https://www.latercera.com/servicios/noticia/programas-de-emprendimiento-fosis-requisitos-y-como-postular/B66C2WILBVDTBGYWS4DOY2SMD4/">Ir
+                                    a la noticia
+                                </a>
+                            </p>
+                        </div>
+                        <div class="article__media">
+                            <video class="article__media--video" controls>
+                                <source
+                                    src="https://www.shutterstock.com/shutterstock/videos/1060058060/preview/stock-footage-asia-businessmen-and-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-colleagues.webm"
+                                    type="video/webm">
+                                <source
+                                    src="https://www.shutterstock.com/shutterstock/videos/1060058060/preview/stock-footage-asia-businessmen-and-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-colleagues.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <audio class="article__media--audio" controls>
+                                <source src="assets/audio/violinista.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </article>
+                    <!-- Noticia 2 -->
+                    <article class="article__body--interest notification is-primary-dark" id="bsn2">
+                        <div>
+                            <h3 class="has-text-white">Operación Renta 2024: ¿Cuándo es y quiénes deben realizarla?</h3>
+                            <h4 class="has-text-primary">NEGOCIOS</h4>
+                            <p>El proceso, que se lleva a cabo anualmente, no es necesario que sea
+                                tramitado por todas las personas, sino que solo por quienes el Servicio de Impuestos
+                                Internos indique.<br>
+                                <a target="_blank"
+                                    href="https://www.latercera.com/servicios/noticia/operacion-renta-2024-cuando-es-y-quienes-deben-realizarla/J44WMWCHJVD4DHO5ACLF5YPL4E/">Ir
+                                    a la noticia
+                                </a>
+                            </p>
+                        </div>
+                        <div class="article__media">
+                            <video class="article__media--video" controls>
+                                <source
+                                    src="https://www.shutterstock.com/shutterstock/videos/1103926799/preview/stock-footage-save-the-planet-earth-global-carbon-offsets-price-report-kpi-co-emission-ai-big-data-global.webm"
+                                    type="video/webm">
+                                <source
+                                    src="https://www.shutterstock.com/shutterstock/videos/1103926799/preview/stock-footage-save-the-planet-earth-global-carbon-offsets-price-report-kpi-co-emission-ai-big-data-global.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <audio class="article__media--audio" controls>
+                                <source src="assets/audio/gruaMunicipal.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </article>
+                    <!-- Noticia 3 -->
+                    <article class="article__body--interest notification is-primary-dark" id="bsn3">
+                        <div>
+                            <h3 class="has-text-white">Disaster Recovery: Una necesidad imperante para las
+                                organizaciones
+                            </h3>
+                            <h4 class="has-text-primary">NEGOCIOS</h4>
+                            <p>
+                                La creciente amenaza de los ciberataques hace cada vez más evidente la importancia de
+                                que
+                                las compañías desarrollen planes para sobreponerse a distintas contingencias. Seguir las
+                                normas internacionales y capacitar al personal son parte de las claves para llevarlo a
+                                cabo.<br>
+                                <a target="_blank"
+                                    href="https://www.latercera.com/piensa-digital/noticia/disaster-recovery-una-necesidad-imperante-para-las-organizaciones/UAH7O6WRRJHWHF57VXV5BSGUJA/?utm_source=imperdibles&utm_medium=latercera&utm_campaign=editorial">Ir
+                                    a la noticia
+                                </a>
+                            </p>
+                        </div>
+                        <div class="article__media">
+                            <video class="article__media--video" controls>
+                                <source
+                                    src="https://www.shutterstock.com/shutterstock/videos/1076498990/preview/stock-footage-top-down-footage-of-a-busy-corporate-office-with-tow-rows-off-businessmen-and-businesswomen-working.webm"
+                                    type="video/webm">
+                                <source
+                                    src="https://www.shutterstock.com/shutterstock/videos/1076498990/preview/stock-footage-top-down-footage-of-a-busy-corporate-office-with-tow-rows-off-businessmen-and-businesswomen-working.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <audio class="article__media--audio" controls>
+                                <source src="assets/audio/bullicio.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </article>
+                </section>
             </div>
         </div>
-
-
 
     </main>
 
@@ -736,33 +834,61 @@
     <!-- portada -->
     <footer class="has-background-primary">
         <div style="display: flex; width: 100%; max-width: 1000px; justify-content: center; align-content: flex-start;">
-            <div class="is-flex" style="justify-content: end;align-self: center; width: 30%;">
+            <div class="is-flex" style="justify-content: end; align-self: center; width: 30%;">
                 <img src="https://i.pinimg.com/736x/db/c2/24/dbc224e90d7b2db5d4ee6e828434226e.jpg"
                     style="height: 70px; border-radius: 100%;">
             </div>
-
             <div style="margin: 1em; width: 70%;">
                 <div class="is-flex m-3">
                     <h4>Noticias El Faro, 2024.</h4>
                 </div>
                 <div class="is-flex is-flex-wrap-wrap">
                     <div class="is-flex is-flex-direction-column mx-3">
-                        <a href="">NOTICIAS</a>
-                        <a href="">ECONOMIA</a>
-                        <a href="">DEPORTES</a>
-                        <a href="">ESPECTÁCULOS</a>
-                        <a href="">TENDENCIAS</a>
-                        <a href="">SERVICIOS</a>
+                        <a href="">¿Quiénes somos?</a>
+                        <a href="">Editoria</a>
+                        <a href="">Clasificador</a>
+                        <a href="">Espectáculos</a>
                     </div>
                     <div class="is-flex is-flex-direction-column mx-3">
-                        <a href="">INVERSIONES</a>
-                        <a href="">BLOGS</a>
-                        <a href="">LEGAL</a>
+                        <a href="">Tienda</a>
+                        <a href="">Inversiones</a>
+                        <a href="">Blogs</a>
+                        <a href="">Legal</a>
                     </div>
                     <div class="is-flex is-flex-direction-column mx-3">
-                        <a href="">CONTACTOS</a>
-                        <a href="">MAPA DEL SITIO</a>
-                        <a href="">CLUB DE LECTORES</a>
+                        <a href="">Indicadores económicos</a>
+                        <a href="">Mercadito</a>
+                        <a href="">Mapa del sitio</a>
+                        <a href="">Club de lectores</a>
+                    </div>
+                </div>
+                <div class="m-3">
+                    Nuestra redes sociales:
+                    <div class="m-3 is-flex is-align-content-center is-flex-wrap-wrap">
+                        <a href="" class="mx-3">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fa fa-twitter"></i>
+                                </span>
+                                <span>Twitter</span>
+                            </span>
+                        </a>
+                        <a href="" class="mx-3">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fa fa-instagram"></i>
+                                </span>
+                                <span>Instagram</span>
+                            </span>
+                        </a>
+                        <a href="" class="mx-3">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fa fa-linkedin"></i>
+                                </span>
+                                <span>Linkedin</span>
+                            </span>
+                        </a>
                     </div>
                 </div>
                 <div class="is-flex m-3">
