@@ -35,7 +35,7 @@ main {
 }
 
 .main__section--spotlight {
-    width: 70%;
+    width: 90%;
     font-size: 0.8em;
     display: flex;
     gap: 1.5em;
@@ -89,9 +89,13 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.305);
 }
 
-.article__body:hover,
-.article__body--interest:hover {
+.article__body:hover {
     background-color: black;
+    color: white;
+}
+
+.article__body--interest:hover {
+    background-color: rgb(35, 35, 35);
     color: white;
 }
 
@@ -174,6 +178,7 @@ a:hover {
     .banner__time {
         font-size: 0.85em;
     }
+
     .banner__menu--items {
         font-size: 1em;
     }
@@ -211,10 +216,16 @@ h4 {
     column-gap: 1rem;
     flex-wrap: wrap;
     justify-content: start;
-    max-width: 230px;
+    max-width: 300px;
     border-bottom: 1px solid #80808079;
     border-right: 1px solid #80808079;
     min-height: 150px;
+}
+
+@media screen and (min-width: 768px) {
+    .spotlight__element {
+        max-width: 230px;
+    }
 }
 
 .spotlight__element--type {
