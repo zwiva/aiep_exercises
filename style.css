@@ -33,7 +33,6 @@ main {
     flex-wrap: wrap;
 }
 
-
 .main__section--spotlight {
     width: 100%;
     font-size: 0.8em;
@@ -48,6 +47,7 @@ main {
     .main__section {
         flex-wrap: nowrap;
     }
+
     .main__section--spotlight {
         width: 80%;
     }
