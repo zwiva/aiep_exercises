@@ -148,7 +148,14 @@ a:hover {
 }
 
 .banner__time {
-    font-size: 0.5em;
+    font-size: 0.6em;
+}
+
+.banner__menu--items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 0.8em;
 }
 
 @media screen and (min-width: 420px) {
@@ -160,10 +167,14 @@ a:hover {
 @media screen and (min-width: 768px) {
     .banner__menu {
         flex-direction: row;
+        justify-content: end;
     }
 
     .banner__time {
         font-size: 0.85em;
+    }
+    .banner__menu--items {
+        font-size: 1em;
     }
 }
 
